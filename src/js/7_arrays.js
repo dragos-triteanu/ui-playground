@@ -1,7 +1,7 @@
 /*global  console*/
 /***********
-***ARRAYS***
-***********/
+ ***ARRAYS***
+ ***********/
 var someArray = ['one', 'two', 'three', 'four', 'five'];
 console.log("ArrayLength:" + someArray.length);
 
@@ -24,13 +24,13 @@ console.log("Array after splice: " + someArray);
 //Must specify a sort function.
 var someArray = ['aa', 'bb', 'a', 4, 8, 15, 16, 23, 42];
 someArray.sort(function (a, b) {
-   if (a === b) {
-      return 0;
-   }
-   if (typeof a === typeof b) {
-      return a < b ? -1 : 1;
-   }
-   return typeof a < typeof b ? -1 : 1;
+    if (a === b) {
+        return 0;
+    }
+    if (typeof a === typeof b) {
+        return a < b ? -1 : 1;
+    }
+    return typeof a < typeof b ? -1 : 1;
 });
 console.log(someArray);
 
