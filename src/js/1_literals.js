@@ -104,8 +104,10 @@ console.log(
  * https://www.youtube.com/watch?v=6w5QDfUa5IY
  */
 
-console.log('NOTE: === and !== work as you\'d expect. If operands of the same type and have the same value, the result is true, eitherwise it\'s false');
-console.log('NOTE: == and != on objects of different types makes javascript attempt to coerce the operators');
+console.log(
+    'NOTE: === and !== work as you\'d expect. If operands of the same type and have the same value, the result is true, eitherwise it\'s false');
+console.log(
+    'NOTE: == and != on objects of different types makes javascript attempt to coerce the operators');
 
 console.log("'' == '0' ::", '' == '0');
 console.log("0 == '' ::", 0 == '');
@@ -116,9 +118,6 @@ console.log("false == undefined ::", false == undefined);
 console.log("false == null ::", false == null);
 console.log("null == undefined ::", null == undefined);
 console.log("' \\t\\r\\n ::' == 0 ", ' \t\r\n ' == 0);
-
-
-
 
 console.log(
     '############# 1.6 - Numbers #############');

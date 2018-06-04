@@ -1,21 +1,22 @@
 /*global  console*/
 /******************************
- ***METHOD INVOCATION PATTERN***
+ *** 5 - Invocation patterns***
  ******************************/
-console.log("=== METHOD ===");
-var
-    methodInvocationObj = {
-        value: 0,
-        getValue: function () {
-            return this.value;
-        }
-    };
+
+
+
+console.log("5.0 - Method invocation pattern");
+
+let methodInvocationObj = {
+  value: 0,
+  getValue: function () {
+    return this.value;
+  }
+};
 console.log(methodInvocationObj.getValue());
 
-/********************************
- ***FUNCTION INVOCATION PATTERN***
- ********************************/
-console.log("=== FUNCTION ===");
+console.log("5.1 - Function invocation pattern");
+
 /*
  When a function is not the property of an object, then it is invoked as a function:
  var sum = add(3, 4); // sum is 7
@@ -28,45 +29,41 @@ console.log("=== FUNCTION ===");
  there is an easy workaround. If the method defines a variable and assigns it
  the value of this, the inner function will have access to this through that variable. By
  convention, the name of that variable is that. */
+
 function globalObj() {
-    return this; // The 'this' reffers to the window global object
+  return this; // The 'this' reffers to the window global object
 }
 
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
-var functionInvocationObj = {value: 7};
-functionInvocationObj.functionInvocation = function () {
-    var
-        _THIS = this, // Workaround.
-        helper = function () {
-            _THIS.value = add(_THIS.value, _THIS.value); // without _THIS , the this refers to the global obj that does not have a value property.
-        };
+let functionInvocationObj = {value: 7};
 
-    helper(); // Invoke helper as a function.
+functionInvocationObj.functionInvocation = function () {
+  let _THIS = this, // Workaround.
+      helper = function () {
+        _THIS.value = add(_THIS.value, _THIS.value); // without _THIS , the this refers to the global obj that does not have a value property.
+      };
+
+  helper(); // Invoke helper as a function.
 };
 // Invoke double as a method.
 functionInvocationObj.functionInvocation();
 console.log(functionInvocationObj.value);
 
-/***********************************
- ***CONSTRUCTOR INVOCATION PATTERN***
- ***********************************/
-console.log("=== CONSTRUCTOR ===");
+console.log("5.2 - Constructor invocation pattern");
 var ConstructorInvocation = function (status) {
-    this.status = status;
+  this.status = status;
 };
 
 var constructorInvocationObj = new ConstructorInvocation("aStatus")
 console.log(constructorInvocationObj.status);
 
-/*****************************
- ***APPLY INVOCATION PATTERN***
- *****************************/
-console.log("=== APPLY ===");
+console.log("5.3 - Apply invocation pattern");
+
 function multiply(a, b) {
-    return a * b;
+  return a * b;
 }
 
 var array = [3, 4];
@@ -77,14 +74,13 @@ console.log(sum);
  ***HIDDEN PARAMS***
  ******************/
 console.log("=== HIDDEN PARAMS ===");
-var
-    x = {
-        hiddenParams: function () {
-            console.log("THIS:");
-            console.log(this);
-            console.log("ARGUMENTS:");
-            console.log(arguments);
-        }
-    }
+var x = {
+  hiddenParams: function () {
+    console.log("THIS:");
+    console.log(this);
+    console.log("ARGUMENTS:");
+    console.log(arguments);
+  }
+};
 x.hiddenParams();
 

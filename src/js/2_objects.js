@@ -4,7 +4,7 @@
  *** 2 - OBJECTS ***
  ************/
 console.log(
-    '############# 1.0 - Creating an object with new #############');
+    '############# 2.0 - Creating an object with new #############');
 
 /** @constructor
  *  @param {number} id The id of the element.
@@ -54,7 +54,7 @@ console.log('ToString of object:: ', someObj.toString());
 console.log('typeof object:: ', typeof someObj);
 
 console.log(
-    '############# 1.1 - Creating an object with new #############');
+    '############# 2.1 - Creating an object with new #############');
 
 var someOtherObject = {
   _id: 2,
@@ -79,7 +79,7 @@ var someOtherObject = {
 console.log('ToString of object:: ', someOtherObject.toString());
 
 console.log(
-    '############# 1.2 - Enums #############');
+    '############# 2.2 - Enums #############');
 /**
  * @enum {string}
  */
@@ -90,7 +90,7 @@ var POSSIBILITY = {
 };
 
 console.log(
-    '############# 1.3 - Object property checking and manipulation #############');
+    '############# 2.3 - Object property checking and manipulation #############');
 
 console.log(
     'NOTE: Property existence can be checked with the ||, which allows for the specification of an alternative value');

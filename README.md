@@ -20,3 +20,4 @@ java -jar compiler.jar 'src/**.js' --js_output_file=out.js --compilation_level=A
 For JSLint:
 ![ScreenShot](./JSLintConfig.png?raw=true "JSLint configuration")
 
+`TS part`
