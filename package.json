@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dragos-triteanu/javascript-playground#readme",
   "dependencies": {
+    "google-closure-compiler": "^20180506.0.0",
     "rxjs": "^6.2.0"
   }
 }
