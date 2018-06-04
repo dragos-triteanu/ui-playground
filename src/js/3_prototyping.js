@@ -1,6 +1,6 @@
 /*global console*/
 /****************
- ***PROTOTYPING***
+ *** 3 - PROTOTYPING ***
  ****************/
 //Knowing that all objects prototype from Object
 Object.prototype.inheritedProperty = "inheritedProperty";

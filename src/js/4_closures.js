@@ -1,7 +1,7 @@
 /*global console*/
 
 /*************
- ***CLOSURES***
+ *** 4 - CLOSURES ***
  *************/
 
 /**
@@ -11,6 +11,7 @@
  source of enormous expressive power.
  */
 console.log("=== CLOSURES ===");
+
 var ClosureObj = function () {
     var value = 0; // the returned function has access to this variable's state
     return {
