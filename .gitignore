@@ -4,3 +4,4 @@ src/typescript/*.js
 src/typescript/*.map
 src/typescript/**/*.js
 src/typescript/**/*.js.map
+node_modules/**
