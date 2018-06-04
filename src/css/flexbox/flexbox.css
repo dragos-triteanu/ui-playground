@@ -1,0 +1,242 @@
+.flex-item {
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.flex-container-1 {
+  display: flex;
+  border: 2px solid black;
+}
+
+.flex-container-2 {
+  display: inline-flex;
+  border: 2px solid black;
+}
+
+.flex-container-3 {
+  display: inline-flex;
+  border: 2px solid black;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+
+.flex-container-4 {
+  width: 50%;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30em;
+}
+
+.flex-container-5 {
+  width: 50%;
+  border: 2px solid black;
+  display: flex;
+  flex-flow: column wrap;
+  height: 30em;
+}
+
+.flex-container-6 {
+  border: 2px solid black;
+  display: inline-flex;
+}
+
+.flex-container-7 {
+  border: 2px solid black;
+  display: flex;
+}
+
+.flex-container-8 {
+  border: 2px solid black;
+  display: flex;
+}
+
+.flex-container-9 {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-10 {
+  border: 2px solid black;
+  display: flex;
+  height: 20em;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-container-11 {
+  border: 2px solid black;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.flex-container-12 {
+  border: 2px solid black;
+  display: flex;
+  height: 10em;
+  align-items: center;
+}
+
+.flex-container-13 {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.flex-container-13 .flex-item {
+
+}
+
+.flex-container-13 .flex-item-1 {
+  height: 30px;
+}
+
+.flex-container-13 .flex-item-2 {
+  height: 20px;
+}
+
+.flex-container-13 .flex-item-3 {
+  height: 40px;
+}
+
+.flex-container-12 .flex-item-3 {
+  align-self: flex-start;
+}
+
+.flex-container-12 .flex-item-4 {
+  align-self: flex-end;
+}
+
+.flex-container-12 .flex-item-2 {
+  align-self: stretch;
+}
+
+.flex-container-10 .flex-item {
+  width: 15px;
+}
+
+.flex-container-8 .flex-item {
+  width: 30em;
+}
+
+.flex-container-8 .flex-item-3 {
+  flex-shrink: 3;
+}
+
+.flex-container-7 .flex-item {
+  flex-grow: 1;
+}
+
+.flex-container-1.flex-item {
+
+}
+
+.flex-container-2.flex-item {
+}
+
+.flex-container-4 .flex-item {
+  width: 10em;
+}
+
+.flex-container-6 .flex-item-3 {
+  order: 1;
+}
+
+.flex-container-6 .flex-item-1 {
+  order: 2;
+}
+
+.flex-container-5 .flex-item {
+  width: 10em;
+}
+
+.flex-item-1 {
+  background-color: lightcoral;
+}
+
+.flex-item-2 {
+  background-color: lightblue;
+}
+
+.flex-item-3 {
+  background-color: lightgreen;
+}
+
+.flex-item-4 {
+  background-color: lightpink;
+}
+
+.flex-item-5 {
+  background-color: lightsalmon;
+}
+
+.flex-item-6 {
+  background-color: lightcyan;
+}
+
+.flex-item-7 {
+  background-color: lightgoldenrodyellow;
+}
+
+.flex-item-8 {
+  background-color: lightskyblue;
+}
+
+/**
+HOLY GRAILS layout
+ */
+
+.holy-header {
+  background-color: darkred;
+}
+
+.holy-content {
+  background-color: darkblue;
+}
+
+.holy-sidebar {
+  background-color: darkgoldenrod;
+}
+
+.holy-navigation {
+  background-color: darkcyan;
+}
+
+.holy-footer {
+  background-color: darkmagenta;
+}
+
+.holy-body {
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.holy-main {
+  display: flex;
+  flex: 6;
+}
+
+.holy-content {
+  flex: 2 2 20em;
+}
+
+.holy-navigation,.holy-sidebar{
+  flex: 1;
+}
+
+.holy-header, .holy-footer {
+  flex:1;
+}
+
+@media screen and (max-width: 500px) {
+  .holy-main {
+    flex-direction: column;
+  }
+}

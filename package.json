@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dragos-triteanu/javascript-playground.git"
+    "url": "git+https://github.com/dragos-triteanu/ui-playground.git"
   },
   "author": "Dragos Triteanu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dragos-triteanu/javascript-playground/issues"
+    "url": "https://github.com/dragos-triteanu/ui-playground.git/issues"
   },
-  "homepage": "https://github.com/dragos-triteanu/javascript-playground#readme",
+  "homepage": "https://github.com/dragos-triteanu/ui-playground.git#readme",
   "dependencies": {
     "google-closure-compiler": "^20180506.0.0",
     "rxjs": "^6.2.0"

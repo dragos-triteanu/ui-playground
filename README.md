@@ -1,6 +1,11 @@
 Javascript example project for fast lookup on best practices.
 
 
+`CSS part`
+
+
+`JS part`
+
 For GCC help :
 java -jar compiler.jar --help
 
