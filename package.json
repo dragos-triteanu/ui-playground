@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dragos-triteanu/ui-playground.git#readme",
   "dependencies": {
     "google-closure-compiler": "^20180506.0.0",
+    "lodash": "^4.17.10",
     "rxjs": "^6.2.0"
   }
 }

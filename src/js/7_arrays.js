@@ -1,6 +1,6 @@
 /*global  console*/
 /***********
- ***ARRAYS***
+ *** 7 - Arrays ***
  ***********/
 var someArray = ['one', 'two', 'three', 'four', 'five'];
 console.log("ArrayLength:" + someArray.length);
